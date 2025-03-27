@@ -2,7 +2,14 @@ fn array_and_vec() -> ([i32; 4], Vec<i32>) {
     let a = [10, 20, 30, 40]; // Array
 
     // Used the `vec!` macro.
-    let v = vec![10, 20, 30, 40];
+    let mut v = vec![10, 20, 30, 40]
+
+    //  other way
+    // let mut v = Vec::new();
+    // v.push(10);
+    // v.push(20);
+    // v.push(30);
+    // v.push(40);
 
     (a, v)
 }
